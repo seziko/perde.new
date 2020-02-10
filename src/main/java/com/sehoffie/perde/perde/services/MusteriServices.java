@@ -24,7 +24,7 @@ public class MusteriServices {
     }
 
 
-    public List<MusteriEntity> musteriEntityList(){
+    public List<MusteriEntity> musteriReporsitory(){
         return musteriRepository.findAll();
 
     }
@@ -36,6 +36,7 @@ public class MusteriServices {
     public void  save(MusteriEntity musteriEntity){
         Optional<KimlikEntity> kimlikEntity = kimlikRepository.findById(1L);
     }
+
 
 
 }

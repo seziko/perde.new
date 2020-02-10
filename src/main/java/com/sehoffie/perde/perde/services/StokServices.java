@@ -36,8 +36,8 @@ public class StokServices {
         return stokRepository.save(stokEntity);
     }
 
-    public void findById(String id) {
-        stokRepository.findById(id);
+    public Optional findById(Long id) {
+       return stokRepository.findById(id);
     }
 
 }

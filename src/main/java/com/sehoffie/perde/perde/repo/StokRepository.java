@@ -10,5 +10,5 @@ public interface StokRepository extends CrudRepository {
          List<StokRepository> findAll();
         void deleteByUrunKodu(String urunKodu);
         void addByUrunKodu(String urunKodu);
-        Optional<StokRepository> findById(String id);
+        Optional<StokRepository> findById(Long id);
     }
